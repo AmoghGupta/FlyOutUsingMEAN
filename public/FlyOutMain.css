@@ -1,0 +1,129 @@
+﻿.FlyOutSuperParent {
+    width: 1200px;
+    padding: 20px 10px 20px 20px;
+    text-align: center;
+    background-color: lightgreen;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    font-family: "Segoe UI";
+}
+.FlyOutParent {
+    height: auto;
+    width: 100%;
+    font-family: "Segoe UI";
+}
+.__MPN_PageFlyOutHeader {
+    float: left;
+    height: auto;
+    width: 230px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Segoe UI";
+}
+.__MPN_FlyoutSeparate {
+    float: left;
+    height: auto;
+    width: 185px;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-family: "Segoe UI";
+}
+.innerClass {
+    box-sizing: border-box;
+    min-height: 145px;
+    border: 1px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Segoe UI";
+}
+.flyOutHeaderContent{
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Segoe UI";
+}
+.flyOutSeparatePara {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Segoe UI";
+}
+#PageFlyOutHeader-0 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI";
+}
+.flyoutSeparateListItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #fff;
+    font-family: "Segoe UI";
+}
+.flyoutSeparateListItems a{
+    color: #fff;
+    font-family: "Segoe UI";
+}
+.flyoutSeparateListItems a:hover{
+    color: #ffea41;
+    cursor: pointer;
+    font-family: "Segoe UI";
+}
+
+.flyoutSeparateList {
+     padding: 0px;
+     font-family: "Segoe UI";
+}
+.flyOutHeaderTable{
+    font-size: 12px;
+    display: none;
+}
+.flyOutHeaderTableDiv .expandImgflyOutTable {
+    float: left;
+    cursor: pointer;
+    width: 13px;
+    height: 14px;
+    top: -27px;
+    position: relative;
+    margin-right: 10px;
+}
+.flyOutHeaderTableDiv .collapseImgflyOutTable{
+    float: left;
+    cursor: pointer;
+    width: 13px;
+    height: 14px;
+    top: -27px;
+    position: relative;
+    margin-right: 10px;
+    background: url("../Content/Images/CollapseMinushub.png") no-repeat !important;
+}
+.flyOutHeaderTable tr:hover {
+    cursor: pointer;
+}
+.flyOutHeaderTable td{
+    padding-bottom: 5px;
+}
+#PageFlyOutHeader-1{
+    margin-top: 12px;
+    margin-left: 18px;
+}
+
+.renderflyOutHeaderTable{
+    margin-left: 18px;
+    position : absolute;
+    width : 220px;
+    height : 132px;
+    font-size: 12px;
+    display: none;
+}
+.flyoutTableElements{
+    position : relative;
+    float : left;
+    width : 45%;
+    padding-bottom: 8px;
+    cursor: pointer;
+}

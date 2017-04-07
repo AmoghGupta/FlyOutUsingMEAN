@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./FlyOutMain.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="./FlyOutMain.js"></script>
+   </head>
+   <body>
+     <div class="jumbotron">
+   <h1>Here is a flyout developed using MEAN Stack</h1>
+   <p> Click below button to toggle the flyout </p>
+  </div>
+      <div class="center">
+         <button class="btn-primary" id="__OCP_Flyout_arrow">Toggle Flyout</button>
+      </div>
+      <div id="flyout" ng-app="FlyOutApp" ng-controller="FlyOutController">
+         <div class="FlyOutSuperParent">
+            <div class="FlyOutParent">
+               <div class="__MPN_PageFlyOutHeader">
+                  <div ng-repeat="header in flyOutHeader">
+                     <div class="innerClass">
+                        <p id="PageFlyOutHeader-{{ $index }}">{{header.name}}</p>
+                        <span ng-if="!isArray(header.data)" class="flyOutHeaderContent">
+                        {{header.data}}
+                        </span>
+                        <div class="flyOutHeaderTableDiv" ng-if="isArray(header.data)">
+                           <span><img class="expandImgflyOutTable" alt="+"></span>
+                           <div class='renderflyOutHeaderTable'>
+                              <div class='flyoutTableElements' ng-repeat="theader in header.data">
+                                 {{theader}}
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="__MPN_FlyoutSeparate" ng-repeat="sections in flyoutSections">
+                  <div ng-repeat="section in sections">
+                     <div class="innerClass">
+                        <p class="flyOutSeparatePara">{{section.name}}</p>
+                        <ul class="flyoutSeparateList" ng-repeat="subreport in section.subReports">
+                           <li class="flyoutSeparateListItems"><a href={{subreport.url}}>{{subreport.name}}</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
